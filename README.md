@@ -68,3 +68,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+ESTRUCTURAS DE LAS CARPETAS
+
+**imagen de estructura
+
+pure: Esta carpeta esta dentro de components y lo que contiene son aquellos archivos .jsx utilizados (componentes), tambien dentro de ella podemos tener otros componentes en otras carpetas como forms por ejemplo.
+
+container: Esta carpeta esta dentro de components, son componentes de orden superior, componentes que renderizan a componentes de mas bajo nivel, los componentes de tipo contenedor van a ser los encargados de llevar la logica y los datos. 
+
+hooks: Esta carpeta esta a la misma altura que components, dentro de hooks vamos a crear nuestros propios hooks. 
+
+routes: Esta carpeta al igual que hooks va a estar a la misma altura que components, y lo que se coloca en su interior son las rutas de nuestro proyecto. Estableceremos que ruta va con cada componente.
+
+pages: Otra carpeta asi como las dos anteriormente mencionadas es pages, que lo que contiene son archivos .jsx que rendericen una pagina
+
+models: Esta carpeta esta dentro de src y la idea de la misma es crear datos o especificar los datos con los que vamos a trabajar
