@@ -1,6 +1,7 @@
 import React from 'react';
 import { LEVELS } from '../../models/levels.enum';
 import { Task } from '../../models/task.class';
+import TaskComponent from '../pure/task';
 
 const TaskListComponent = () => {
 
@@ -18,10 +19,9 @@ const TaskListComponent = () => {
                 </h1>
             </div>
             {/* TODO: Aplicar un For/Map para renderizar una lista */}
-            <TaskListComponent task={ defaultTask }></TaskListComponent>
+            <TaskComponent task={ defaultTask }></TaskComponent>
         </div>
     );
 };
-
 
 export default TaskListComponent;

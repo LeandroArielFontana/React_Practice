@@ -3,25 +3,50 @@ import './App.css';
 import Greeting from './components/greeting';
 import GreetingF from './components/pure/greetingF';
 import TaskListComponent from './components/container/task_list';
+import Example1 from './hooks/example1';
+import Example2 from './hooks/example2';
+import MyComponentWithContext from './hooks/example3';
+import Example4 from './hooks/example4';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        {/*<Greeting name="Leandro"></Greeting>*/}
-        {/* Componente de ejemplo funcional */}
-        {/*<GreetingF name="Leandro"></GreetingF>*/}
-        {/* Componente de listado de tareas */}
+        {/* 
+        Capitulos 1 y 2 
+        
+        <Greeting name="Leandro"></Greeting>
+        
+        Componente de ejemplo funcional
+
+        <GreetingF name="Leandro"></GreetingF>
+        */}
+        
+        {/* 
+        Capitulo 3
+
+        Componente de listado de tareas
+
         <TaskListComponent></TaskListComponent>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        */}
+
+        {/*
+        Ejemplos de uso de Hooks 
+        
+        <Example1></Example1>
+        
+        <Example2></Example2>
+
+        <MyComponentWithContext></MyComponentWithContext>
+        */}
+        
+        <Example4 name='Leandro'>
+        {/* Todo lo que esta aca adentro es tratado como prop.children */}
+          <h3>
+            Contenido del props.children
+          </h3>
+        </Example4>
       </header>
     </div>
   );

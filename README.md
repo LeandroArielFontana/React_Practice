@@ -84,3 +84,7 @@ routes: Esta carpeta al igual que hooks va a estar a la misma altura que compone
 pages: Otra carpeta asi como las dos anteriormente mencionadas es pages, que lo que contiene son archivos .jsx que rendericen una pagina
 
 models: Esta carpeta esta dentro de src y la idea de la misma es crear datos o especificar los datos con los que vamos a trabajar
+
+HOOKS   
+
+Los hooks son funciones que se incorporaron en 2018/19 que lo que hacen es especificar mecanismos para trabajar con componentes funcionales, mientras que los componentes de tipo clase tenian un constructor o metodos privados. Cuando creamos componentes de tipo funcion que lo que devuelven son otros componentes (.jsx) necesitamos un mecanismo que nos ayude a trabajar con estados o con otras cosas como referencias. 
