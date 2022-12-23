@@ -88,3 +88,17 @@ models: Esta carpeta esta dentro de src y la idea de la misma es crear datos o e
 HOOKS   
 
 Los hooks son funciones que se incorporaron en 2018/19 que lo que hacen es especificar mecanismos para trabajar con componentes funcionales, mientras que los componentes de tipo clase tenian un constructor o metodos privados. Cuando creamos componentes de tipo funcion que lo que devuelven son otros componentes (.jsx) necesitamos un mecanismo que nos ayude a trabajar con estados o con otras cosas como referencias. 
+
+CICLOS DE VIDA:
+
+Son metodos o funciones que se ejecutan de forma automatica cuando el componente sufre un cambio.
+
+# Tabla para entender LifeCycle
+
+|Metodos de LifeCycle|Hooks de LifeCycle|
+| ------------------| -------------------- |
+| Introducido en versiones iniciales | Introducido en 2018 |
+| Funciona con ES5 | Funciona con >ES6 |
+| Incorporado en componentes de clase | Incorporado para componentes funcionales |
+| Necesita un constructor para inicializar | No necesita constructor |
+| Uso de THIS bindeado de la clase | No necesita THIS para ser usado |
