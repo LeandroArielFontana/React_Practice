@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import Greeting from './components/greeting';
+import Greeting from './components/pure/greeting';
 import GreetingF from './components/pure/greetingF';
 import TaskListComponent from './components/container/task_list';
 import Example1 from './hooks/example1';
 import Example2 from './hooks/example2';
 import MyComponentWithContext from './hooks/example3';
 import Example4 from './hooks/example4';
+import GreetingStyled from './components/pure/greetingStyled';
 
 function App() {
   return (
@@ -27,26 +28,25 @@ function App() {
         Capitulo 3
 
         Componente de listado de tareas
-
         <TaskListComponent></TaskListComponent>
         */}
 
         {/*
         Ejemplos de uso de Hooks 
-        
         <Example1></Example1>
-        
         <Example2></Example2>
-
         <MyComponentWithContext></MyComponentWithContext>
         */}
-        
-        <Example4 name='Leandro'>
+
         {/* Todo lo que esta aca adentro es tratado como prop.children */}
+        {/*
+        <Example4 name='Leandro'>
+        
           <h3>
             Contenido del props.children
           </h3>
-        </Example4>
+        </Example4> */}
+        <GreetingStyled name='Leandro'></GreetingStyled>
       </header>
     </div>
   );
