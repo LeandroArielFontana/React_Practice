@@ -12,9 +12,9 @@ import GreetingStyled from './components/pure/greetingStyled';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/*<header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        {/* 
+         
         Capitulos 1 y 2 
         
         <Greeting name="Leandro"></Greeting>
@@ -46,8 +46,13 @@ function App() {
             Contenido del props.children
           </h3>
         </Example4> */}
-        <GreetingStyled name='Leandro'></GreetingStyled>
-      </header>
+
+        {/*<GreetingStyled name='Leandro'></GreetingStyled>
+
+
+      </header>*/}
+
+      <TaskListComponent></TaskListComponent>
     </div>
   );
 }
