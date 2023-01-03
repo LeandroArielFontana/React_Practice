@@ -8,6 +8,7 @@ import Example2 from './hooks/example2';
 import MyComponentWithContext from './hooks/example3';
 import Example4 from './hooks/example4';
 import GreetingStyled from './components/pure/greetingStyled';
+import Father from './components/container/father';
 
 function App() {
   return (
@@ -51,8 +52,9 @@ function App() {
 
 
       </header>*/}
-
-      <TaskListComponent></TaskListComponent>
+      {/* Gestion de eventos */}
+      <Father></Father>
+      {/* <TaskListComponent></TaskListComponent> */}
     </div>
   );
 }
