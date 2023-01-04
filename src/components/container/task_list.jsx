@@ -26,8 +26,30 @@ const TaskListComponent = () => {
         };
     }, [tasks]);
 
-    const changeCompleted =  (id) => {
-        console.log('TODO: Cambiar estado de una tarea')
+    function completeTask(task){
+        console.log('Complete This Task: ', task);
+        const index = tasks.indexOf(task);
+        const tempTask = [...tasks];
+        tempTask[index].completed = !tempTask[index].completed;
+        // We update the state of the component with the new list of tasks and it will update the 
+        // Iteration of the task in order to show the task updated
+        setTasks(tempTask);
+    }
+
+    function deleteTask(task){
+        console.log('Delete This Task: ', task);
+        const index = tasks.indexOf(task);
+        const tempTask = [...tasks];
+        tempTask.splice(index,1);
+        setTasks(tempTask);
+    }
+
+    function addTask(task){
+        console.log('Add This Task: ', task);
+        const index = tasks.indexOf(task);
+        const tempTask = [...tasks];
+        tempTask.push(task);
+        setTasks(tempTask);
     }
 
     return (
@@ -54,16 +76,19 @@ const TaskListComponent = () => {
                                     return (
                                         <TaskComponent 
                                             key={ index } 
-                                            task={ task }>
+                                            task={ task }
+                                            complete={ completeTask }
+                                            remove={ deleteTask }
+                                        >
                                         </TaskComponent>
                                     )
                                 })}
                             </tbody>
                         </table>
                     </div>
-                    <TaskForm></TaskForm>
                 </div>
             </div>
+            <TaskForm add={ addTask }></TaskForm>
             {/* TODO: Aplicar un For/Map para renderizar una lista 
             <TaskComponent task={ defaultTask }></TaskComponent>*/}
         </div>
