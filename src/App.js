@@ -9,6 +9,7 @@ import MyComponentWithContext from './hooks/example3';
 import Example4 from './hooks/example4';
 import GreetingStyled from './components/pure/greetingStyled';
 import Father from './components/container/father';
+import OptionalRender from './components/pure/optionalRender';
 
 function App() {
   return (
@@ -50,11 +51,15 @@ function App() {
 
         {/*<GreetingStyled name='Leandro'></GreetingStyled>
 
-
       </header>*/}
       {/* Gestion de eventos */}
       {/* <Father></Father> */}
-      <TaskListComponent></TaskListComponent>
+
+      {/* Ejemplos de renderizado condicional */}
+      <OptionalRender></OptionalRender>
+
+      {/* PROYECTO FINAL */}
+      {/* <TaskListComponent></TaskListComponent> */}
     </div>
   );
 }
